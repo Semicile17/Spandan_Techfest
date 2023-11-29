@@ -4,7 +4,7 @@ import {
   DirectorGBPIET,
   FacultyData,
   HeadData,
-  ManagerData,
+  
 } from "../data/facultyData";
 import "../data/fonts.css";
 
@@ -135,7 +135,7 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
-      <div>
+      {/* <div>
         <h2
           className="mb-2 text-3xl font-semibold text-left md:text-3xl md:my-10"
           style={{ fontFamily: "Syne" }}
@@ -158,7 +158,7 @@ const AboutPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -33,7 +33,7 @@ const EventPage = () => {
     }, 200);
   };
   return (
-    <div className="flex flex-col w-full md:w-full h-fit bg-[#002046] portfolio-content-wrapper ">
+    <div className="flex flex-col w-full md:w-full h-fit bg-[#002046] portfolio-content-wrapper">
       <EventUpper />
       <Filter filterEvents={(tag) => filterEvents(tag)} />
       <Showcase data={events} transition={transition} />

@@ -55,13 +55,13 @@ export const HeadData = [
   },
 ];
 
-export const ManagerData = [
-  {
-    id: 1,
-    img: arvindsir,
-    name: " Arvind Singh Rawat",
-    position: "Overall Team Coordinator",
-  },
+// export const ManagerData = [
+//   {
+//     id: 1,
+//     img: arvindsir,
+//     name: " Arvind Singh Rawat",
+//     position: "Overall Team Coordinator",
+//   },
 
   // {
   //   id: 2,
@@ -69,30 +69,30 @@ export const ManagerData = [
   //   name: "Harsh Chaudhary",
   //   position: "Events and Management ",
   // },
-  {
-    id: 3,
-    img: gyanedrasir,
-    name: "Gyanendra Singh",
-    position: "Events and Management",
-  },
-  {
-    id: 4,
-    img: amansir,
-    name: "Aman Khanduri",
-    position: "Web and Creative Team",
-  },
-  {
-    id: 5,
-    img: kanchanmam,
-    name: "Kanchan Sirswal",
-    position: "Decoration Team",
-  },
-  {
-    id: 6,
-    img: yashsir,
-    name: "Yash Singal",
-    position: "Hospitality Team",
-  },
+  // {
+  //   id: 3,
+  //   img: gyanedrasir,
+  //   name: "Gyanendra Singh",
+  //   position: "Events and Management",
+  // },
+  // {
+  //   id: 4,
+  //   img: amansir,
+  //   name: "Aman Khanduri",
+  //   position: "Web and Creative Team",
+  // },
+  // {
+  //   id: 5,
+  //   img: kanchanmam,
+  //   name: "Kanchan Sirswal",
+  //   position: "Decoration Team",
+  // },
+  // {
+  //   id: 6,
+  //   img: yashsir,
+  //   name: "Yash Singal",
+  //   position: "Hospitality Team",
+  // },
   // {
   //   id: 7,
   //   img: dummyimage,
@@ -105,4 +105,4 @@ export const ManagerData = [
   //   name: "ABC Singh",
   //   position: "Media and Publicity Team",
   // },
-];
+// ];

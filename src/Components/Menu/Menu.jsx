@@ -1,7 +1,7 @@
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import logo from "../../Images/homeImages/logoc.png";
 import "../../data/fonts.css";
 import bg2 from "../../Images/homeImages/homepage_bg2.png";
@@ -19,6 +19,9 @@ const Menu = () => {
     setActive(id);
   };
 
+  const location = useLocation();
+  const currentPath = location.pathname;
+  console.log(currentPath);
   return (
     <div
       style={backgroundStyle}
@@ -52,7 +55,7 @@ const Menu = () => {
             to={"/"}
             style={{ fontFamily: "exo" }}
             onClick={() => clickhandler("Home")}
-            className={`${active === "Home" ? activeClass : ""}`}
+            className={`${currentPath === "/" ? activeClass : ""}`}
           >
             HOME
           </Link>
@@ -66,7 +69,19 @@ const Menu = () => {
             to={"/Events"}
             style={{ fontFamily: "exo" }}
             onClick={() => clickhandler("Events")}
-            className={`${active === "Events" ? activeClass : ""}`}
+            className={`${
+              currentPath ===
+              ("/Events" ||
+                "/Events/1" ||
+                "/Events/2" ||
+                "/Events/3" ||
+                "/Events/4" ||
+                "/Events/5" ||
+                "/Events/6" ||
+                "/Events/7")
+                ? activeClass
+                : ""
+            }`}
           >
             EVENTS
           </Link>
@@ -78,7 +93,7 @@ const Menu = () => {
         >
           <Link
             onClick={() => clickhandler("About")}
-            className={`${active === "About" ? activeClass : ""}`}
+            className={`${currentPath === "/AboutUs" ? activeClass : ""}`}
             to={"/AboutUs"}
             style={{ fontFamily: "exo" }}
           >

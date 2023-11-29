@@ -8,6 +8,7 @@ import Navbar from "./Components/Menu/Navbar";
 import RegisterPage from "./Pages/RegisterPage";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <div className="px-3 py-6 md:px-10 lg:px-20  bg-[#002046]">
