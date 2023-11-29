@@ -1,7 +1,7 @@
 import React from "react";
 import background1 from "../../Images/homeImages/homepage-bg.png";
 import down from "../../Images/homeImages/arrowdown.png";
-import '../../data/fonts.css'
+import "../../data/fonts.css";
 import { Link } from "react-router-dom";
 
 function Registerpage() {
@@ -36,7 +36,7 @@ function Registerpage() {
             className="px-4 py-2 font-bold text-yellow-400 rounded-lg bg-[#0b274a]  my-7 lg:my-5"
             style={{ fontFamily: "Syne" }}
           >
-            <Link to={"/Register"}>REGISTER NOW</Link>
+            <Link to={"/Events"}>REGISTER NOW</Link>
           </button>
         </div>
         <div className="animate-bounce">
