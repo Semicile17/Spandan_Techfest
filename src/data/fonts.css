@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Syne';
+    src: url('/src/assets/Syne/Syne-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spacemono';
+    src: url('/src/assets/Space_Mono/SpaceMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nasa';
+    src: url('/src/assets/NASALIZA.TTF');
+}
+
+@font-face {
+    font-family: 'michroma';
+    src: url('/src/assets/Michroma/Michroma-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'sharetech';
+    src: url('/src/assets/Share_Tech/OFL.txt');
+}
+
+@font-face {
+    font-family: 'exo';
+    src: url('/src/assets/Exo-VariableFont_wght.ttf');
+}
