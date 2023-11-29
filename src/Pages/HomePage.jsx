@@ -1,5 +1,6 @@
-import React from "react";
-
+import React,{useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Registerpage from "../Components/HomeComponents/Register";
 import Timeline from "../Components/HomeComponents/Timeline";
 import Box from "../Components/HomeComponents/Box";

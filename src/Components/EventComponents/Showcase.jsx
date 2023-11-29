@@ -1,28 +1,35 @@
 import React, { useEffect } from "react";
-import Aos from "aos";
+
 import '../../data/fonts.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 import { Link, useNavigate } from "react-router-dom";
 
 const Showcase = ({ data, transition }) => {
+    useEffect(() => {
+      Aos.init({ duration: 2000 });
+    }, []);
   const navigate = useNavigate();
   return (
     <div className="mt-10 sm:grid sm:grid-cols-2 gap-x-5 lg:grid-cols-3 lg:gap-10 ">
       {data.map((events) => (
         <div
+          data-aos="fade-up"
           key={events.id}
           className="mt-4 rounded-3xl bg-[#D9D9D91A] 
           "
         >
-          <div className="w-full scale-90 hover:scale-110">
+          <div className="w-full duration-200 ease-out scale-90 hover:scale-100">
             <img
               className="object-cover w-full h-full rounded-3xl "
               src={events.image}
             />
           </div>
-          <div className="flex flex-col px-4 py-1 text-white text-start ">
+          <div className="flex flex-col px-4 pb-1 text-white text-start ">
             <h2
-              className="py-1 font-base text-xl md:text-4xl font-semibold font-['inknut_Antiqua']"
+              className="pb-1 font-base text-xl md:text-4xl font-semibold font-['inknut_Antiqua'] text-center"
               style={{ fontFamily: "Syne" }}
             >
               {events.name}

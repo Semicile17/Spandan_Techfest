@@ -19,7 +19,7 @@ const EventDetail = () => {
       <div className="mt-54 lg:w-1/2">
         <div className="flex items-center justify-between mt-5">
           <h1
-            className="w-2/3 text-2xl font-medium lg:w-full lg:text-4xl sm:text-3xl md:text-4xl xl:text-5xl"
+            className="w-2/3 text-2xl font-bold lg:w-full lg:text-4xl sm:text-3xl md:text-4xl xl:text-5xl"
             style={{ fontFamily: "Syne" }}
           >
             {eventDetail.name}
@@ -36,22 +36,22 @@ const EventDetail = () => {
           </span>
         </div>
 
-        <p className="text-lg font-light " style={{ fontFamily: "spacemono" }}>
+        <p
+          className="mt-5 text-lg font-light"
+          style={{ fontFamily: "spacemono" }}
+        >
           {eventDetail.desc}
         </p>
-        <h2
-          className="text-3xl text-center lg:font-medium lg:text-4xl"
+        <p
+          className="mt-5 text-xl font-semibold text-left"
           style={{ fontFamily: "Syne" }}
         >
-          Entry and Prize
-        </h2>
-        <p className="text-lg text-center" style={{ fontFamily: "Syne" }}>
           {eventDetail.category}
         </p>
         <div>
-          <div className="flex items-center">
+          <div className="flex items-center mt-5 ">
             <p
-              className="text-lg lg:text-2xl"
+              className="text-lg font-semibold lg:text-2xl"
               style={{ fontFamily: "michroma" }}
             >
               Entry Price:
@@ -65,7 +65,7 @@ const EventDetail = () => {
           </div>
           <div className="flex items-end">
             <p
-              className="text-lg lg:text-2xl"
+              className="text-lg font-semibold lg:text-2xl"
               style={{ fontFamily: "michroma" }}
             >
               Winner :{" "}
@@ -79,7 +79,7 @@ const EventDetail = () => {
           </div>
           <div className="flex items-end">
             <p
-              className="text-lg lg:text-2xl"
+              className="text-lg font-semibold lg:text-2xl"
               style={{ fontFamily: "michroma" }}
             >
               Runner Up :{"  "}

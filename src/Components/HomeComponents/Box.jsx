@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import bg2 from "../../Images/homeImages/homepage_bg2.png";
 import line from "../../Images/homeImages/line.jpeg";
 import "../../data/fonts.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Box({ heading, extraHeading, data ,key}) {
   const backgroundStyle = {
@@ -10,11 +12,18 @@ function Box({ heading, extraHeading, data ,key}) {
     backgroundSize: "cover",
   };
   
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div
+      key={key}
+      data-aos="fade-up"
       style={backgroundStyle}
-      className={`flex items-center gap-1 py-5 mx-5 my-5 md:h-36 ${key%2===0 ? "flex-row-reverse" : "flex-row"}` }
+      className={`flex items-center gap-1 py-5 mx-5 my-5 md:h-36 ${
+        key % 2 === 0 ? "flex-row-reverse" : "flex-row"
+      }`}
     >
       <div className="text-center w-fit sm:w-1/3">
         <div
