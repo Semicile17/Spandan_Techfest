@@ -77,8 +77,10 @@ export const Eventdata = [
     tags: ["Coding"],
     link: coding,
     branchEntry: "99/Head",
-    branchFirst: "xxK",
-    branchSecond: "xxK",
+
+    branchFirst: "1.5k",
+    branchSecond: "500",
+
     CordinateName: "Nutan Senwal",
     CordinateNumber: "+91-8272890623",
     category: "Multiple-Teams/Branch",
